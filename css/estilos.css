@@ -1,0 +1,161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.l_upein{/*LOGO DE LA UNIVERSIDAD*/
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw;
+}
+
+footer div{
+    background: linear-gradient(rgb(179, 45, 15),rgb(80, 20, 5));
+    font-size: 1vw;
+    color: white;
+}
+.arriba{/*enlace boton arriba a la parte superior*/
+    height: 5vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.arriba a:hover{/*enlace boton arriba a la parte superior*/
+    background: linear-gradient(rgb(224, 37, 37),rgb(48, 8, 8));
+    border-radius: .6vw;
+}
+.arriba a{
+    padding:.5vw;
+    text-decoration: none;
+    color:white; 
+}
+.p_footer{
+    display: flex;
+    height: 8vw;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.banner{/*banner superior*/
+    background: linear-gradient(rgb(167, 47, 20),rgb(92, 25, 10));
+    display: flex;
+    flex-direction: row;
+    margin-top:.3vw; 
+}
+.p_p{/*contenedor del titulo*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p_upein{/*nombre de la universidad en el banner*/
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Ultra', serif;
+    color: white;
+    font-size: 1.5vw;
+}
+.contenedor{
+    padding: 0;
+    width: 100%;
+    margin: auto; 
+    border: .3vw white solid;
+    background: white;
+}
+.container{/*contenedor de la tabla*/
+    background-color: white;
+    width: 100%;
+    margin-bottom:1vw;
+}
+/* body{
+    background: linear-gradient(#A7A6A6,#DDDBDB);
+} */
+
+
+/*---------------------------------------------------------------------*/
+ul{
+    z-index: 999999999;/*para que el nav quede adelante*/
+    background: linear-gradient(rgb(204, 53, 20),rgb(114, 31, 15));
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding: .6vw;
+}
+ul li a:hover{
+    background:  linear-gradient(rgb(105, 30, 13),rgb(185, 54, 28));
+    border-radius: .6vw;
+    text-decoration: none;
+    color:#fff;
+}
+ul li ul{
+    display: none;
+    position: absolute;
+    min-width: 14vw;
+    border-radius: .6vw;
+}
+ul li:hover > ul{
+    display: block;
+}
+ul li ul li{
+    position: relative;
+}
+ul li ul li:hover > ul{
+    right: -14vw;
+    top:0;
+}
+
+#slider{
+    height: 100vh;
+}
+#bienvenido{
+    height: 100%;
+    width: 100%;
+}
+
+/*---------------------------------BANNER--------------------------------*/
+*{
+    box-sizing: border-box;
+}
+.banner{
+    display: flex;
+    height: 40vh;
+}
+.banner__item{
+    flex:1;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow 0.2s;
+}
+.banner__item:hover{
+    flex-grow: 10;
+}
+.banner__item:hover .banner__title{
+    transform: rotate(0);
+}
+.banner__item:nth-child(1){
+    background: hsl(90, 100%, 40%);
+}
+.banner__item:nth-child(2){
+    background: hsl(30, 100%, 40%);
+}
+.banner__item:nth-child(3){
+    background: hsl(200, 100%, 40%);
+}
+.banner__item:nth-child(4){
+    background: hsl(280, 100%, 40%);
+}
+.banner__title{
+    margin:0;
+    transform: rotate(-90deg);
+    transition: transform 0.2s 0.2s;
+}
+/*--------------------row table-responsive---------------*/
